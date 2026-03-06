@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/RandomGroupGeneratorLibrary/pom.xml" />
+        <option value="$PROJECT_DIR$/Random-main/pom.xml" />
       </list>
     </option>
   </component>
