@@ -32,8 +32,10 @@ public class GroupGenerator {
         }
 
         Random random = new Random();
+        int limiteDeTentativas = 0;
 
-        while (true) {
+        while (limiteDeTentativas < 1000) {
+            limiteDeTentativas++;
             int indice1 = random.nextInt(estudantes.size());
             int indice2 = random.nextInt(estudantes.size());
 
@@ -47,16 +49,21 @@ public class GroupGenerator {
             String par = aluno1 + "-" + aluno2;
             String parAoContrario = aluno2 + "-" + aluno1;
 
+
             if (paresFormados.contains(par) || paresFormados.contains(parAoContrario)) {
-                return null;
+                continue;
             }
 
             paresFormados.add(par);
             estudantes.remove(aluno1);
             estudantes.remove(aluno2);
             contador++;
+
+
             return par;
         }
+
+        return null;
     }
 
     // Histórico de pares
@@ -79,16 +86,25 @@ public class GroupGenerator {
             return null;
         }
 
-        String parManual = estudantes.get(posicaoAluno1) + "-" + estudantes.get(posicaoAluno2);
-        String parManual2 = estudantes.get(posicaoAluno2) + "-" + estudantes.get(posicaoAluno1);
+        String aluno1 = estudantes.get(posicaoAluno1);
+        String aluno2 = estudantes.get(posicaoAluno2);
+        String parManual = aluno1 + "-" + aluno2;
+        String parManual2 = aluno2 + "-" + aluno1;
 
         if (paresFormados.contains(parManual) || paresFormados.contains(parManual2)) {
             return null;
         }
 
         paresFormados.add(parManual);
+        estudantes.remove(aluno1);
+        estudantes.remove(aluno2);
         contador++;
         return parManual;
     }
-
+    //Grupos que ja foram feitos
+    public static void inserirNoHistorico(String par) {
+        if (!paresFormados.contains(par)) {
+            paresFormados.add(par);
+        }
+    }
 }

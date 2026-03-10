@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="IODataLibrary-1.0 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Random-main/lib/IODataLibrary-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Random-main/lib/RandomGroupGeneratorLibrary-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
