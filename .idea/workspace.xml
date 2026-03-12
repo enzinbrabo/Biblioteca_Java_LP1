@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="RandomGroupGeneratorLibrary:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81ffec62-8169-4f2b-97a0-c71b984cae82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/IODataLibrary_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/IODataLibrary_1_0__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/RandomGroupGeneratorLibrary_1_0_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Random-main/groups" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Random-main/students" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RandomGroupGeneratorLibrary_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Random-main/lib/RandomGroupGeneratorLibrary.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Random-main/lib/RandomGroupGeneratorLibrary-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Random-main/lib/RandomGroupGeneratorLibrary-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Random-main/groups" beforeDir="false" afterPath="$PROJECT_DIR$/Random-main/groups" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Random-main/lib/RandomGroupGeneratorLibrary-1.0-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Random-main/src/main/java/pt/estga/randomlb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Random-main/src/main/java/pt/estga/randomlb/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Random-main/students" beforeDir="false" afterPath="$PROJECT_DIR$/Random-main/students" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Random-main/target/classes/pt/estga/randomlb/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Random-main/target/classes/pt/estga/randomlb/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandomGroupGeneratorLibrary/src/main/java/org/example/GroupGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/RandomGroupGeneratorLibrary/src/main/java/org/example/GroupGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RandomGroupGeneratorLibrary/target/classes/org/example/GroupGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/RandomGroupGeneratorLibrary/target/classes/org/example/GroupGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandomGroupGeneratorLibrary/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/RandomGroupGeneratorLibrary/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandomGroupGeneratorLibrary/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/RandomGroupGeneratorLibrary/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +32,12 @@
     </branch-grouping>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "NicolasCP-12"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/enzinbrabo/Biblioteca_Java_LP1.git&quot;,
@@ -68,15 +75,15 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Enzo Mello/Documents/Java/LP/Biblioteca_Java_LP1/Random-main/lib",
+    "last_opened_file_path": "C:/Users/nicol/Semestre-2/LP/Biblioteca_Java_LP1/Random-main/lib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
@@ -84,6 +91,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nicol\Semestre-2\LP\Biblioteca_Java_LP1\Random-main\lib" />
       <recent name="C:\Users\Enzo Mello\Documents\Java\LP\Biblioteca_Java_LP1\Random-main\lib" />
     </key>
   </component>
@@ -110,8 +118,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
       </set>
     </attachedChunks>
   </component>

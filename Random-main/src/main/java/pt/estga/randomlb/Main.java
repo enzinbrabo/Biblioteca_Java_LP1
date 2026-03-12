@@ -10,8 +10,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        String ficheiroEstudantes = "C:\\Users\\Enzo Mello\\Documents\\Java\\LP\\Biblioteca_Java_LP1\\Random-main\\students";
-        String ficheiroGrupos = "C:\\Users\\Enzo Mello\\Documents\\Java\\LP\\Biblioteca_Java_LP1\\Random-main\\groups";
+        String ficheiroEstudantes = "C:\\Users\\nicol\\Semestre-2\\LP\\Biblioteca_Java_LP1\\Random-main\\students";
+        String ficheiroGrupos = "C:\\Users\\nicol\\Semestre-2\\LP\\Biblioteca_Java_LP1\\Random-main\\groups";
         IODataClass io = new IODataClass();
 
         StudentInfo[] listaEstudantes = io.loadStudentUC(ficheiroEstudantes);
@@ -21,37 +21,40 @@ public class Main {
             return;
         }
 
+        // Preenchimento inicial
         for (StudentInfo aluno : listaEstudantes) {
             GroupGenerator.inserirEstudante(aluno.getStudentName());
         }
 
         try (Scanner input = new Scanner(System.in)) {
             while (true) {
-                System.out.println("1 - Inserir novos estudantes (Já carregados automaticamente)");
-                System.out.println("2 - Gerar grupos de 2 estudantes de forma aleatoria");
-                System.out.println("3 - Carregar o historico de grupos para evitar repeticoes");
-                System.out.println("4 - Inserir manualmente um grupo e gerar o resto");
+                System.out.println("1 - Gerar grupos de 2 estudantes de forma aleatoria");
+                System.out.println("2 - Carregar o historico de grupos para evitar repeticoes");
+                System.out.println("3 - Inserir manualmente um grupo e gerar o resto");
                 System.out.println("0 - Sair do programa");
                 System.out.print("Escolha uma opcao: ");
 
-                char opcao = input.nextLine().charAt(0);
+                String linha = input.nextLine();
+                if (linha.isEmpty()) continue;
+                char opcao = linha.charAt(0);
 
                 if (opcao == '0') break;
 
                 switch (opcao) {
                     case '1':
-                        System.out.println("Os estudantes já foram carregados automaticamente do arquivo!");
-                        break;
-
-                    case '2':
+                        if (GroupGenerator.estudantes.isEmpty()) {
+                            for (StudentInfo aluno : listaEstudantes) {
+                                GroupGenerator.inserirEstudante(aluno.getStudentName());
+                            }
+                        }
                         gerarRestanteESalvar(listaEstudantes, io, ficheiroGrupos);
                         break;
 
-                       case '3':
+                    case '2':
                         String[] historico = io.loadGroupsasString(ficheiroGrupos);
                         if (historico != null) {
-                            for (String linha : historico) {
-                                String[] partes = linha.split(",");
+                            for (String s : historico) {
+                                String[] partes = s.split(",");
                                 if (partes.length >= 5) {
                                     String aluno1 = partes[2].trim();
                                     String aluno2 = partes[4].trim();
@@ -64,7 +67,13 @@ public class Main {
                         }
                         break;
 
-                    case '4':
+                    case '3':
+                        if (GroupGenerator.estudantes.isEmpty()) {
+                            for (StudentInfo aluno : listaEstudantes) {
+                                GroupGenerator.inserirEstudante(aluno.getStudentName());
+                            }
+                        }
+
                         System.out.println("Digite a posicao do primeiro aluno na lista (Ex: 0): ");
                         int pos1 = Integer.parseInt(input.nextLine());
                         System.out.println("Digite a posicao do segundo aluno na lista (Ex: 1): ");

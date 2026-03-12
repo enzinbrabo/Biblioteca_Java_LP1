@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RandomGroupGeneratorLibrary">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Random-main/lib/RandomGroupGeneratorLibrary.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
